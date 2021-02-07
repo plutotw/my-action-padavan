@@ -5,7 +5,7 @@
 user_name="admin"                        # 用户名 admin
 user_password=$user_name                 # 用户密码 admin
 lan_ip="192.168.3"                       # lan 地址 192.168.3.1 一定别写后面的 .1
-wifi_password="1234567890"               # wifi密码，切记密码最少8位 admin
+wifi_password="18277357732"               # wifi密码，切记密码最少8位 admin
 version_time=$(date "+%Y%m%d")           # 自动时间更新时版本号: 20200320
 default_path="./user/shared/defaults.h"  # 默认文件配置目录
 
@@ -76,7 +76,7 @@ echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config     # smartdns
 echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=y" >> .config  # smartdns二进制文件
 
 #网易云解锁
-echo "CONFIG_FIRMWARE_INCLUDE_WYY=y" >> .config
+echo "CONFIG_FIRMWARE_INCLUDE_WYY=n" >> .config
 #网易云解锁GO版本执行文件（4M多）注意固件超大小
 echo "CONFIG_FIRMWARE_INCLUDE_WYYBIN=n" >> .config
 
